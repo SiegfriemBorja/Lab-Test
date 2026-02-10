@@ -1,1 +1,46 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Seller Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Seller Shop</h1>
+    <p>Simple online store</p>
+</header>
+
+<main>
+    <section class="products">
+        <div class="product">
+            <h3>T-Shirt</h3>
+            <p>Price: $10</p>
+            <button onclick="addToCart('T-Shirt', 10)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Shoes</h3>
+            <p>Price: $25</p>
+            <button onclick="addToCart('Shoes', 25)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Hat</h3>
+            <p>Price: $7</p>
+            <button onclick="addToCart('Hat', 7)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Cart</h2>
+        <ul id="cartItems"></ul>
+        <p><strong>Total: $<span id="total">0</span></strong></p>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
