@@ -2,38 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Seller Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DreamHouse Realty</title>
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
-    <h1>My Seller Shop</h1>
-    <p>Simple online store</p>
+    <h1>DreamHouse Realty</h1>
+    <p>Find your perfect home</p>
 </header>
 
-<main>
-    <section class="products">
-        <div class="product">
-            <h3>T-Shirt</h3>
-            <p>Price: $10</p>
-            <button onclick="addToCart('T-Shirt', 10)">Add to Cart</button>
-        </div>
+<!-- NAVIGATION -->
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">Houses</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+</nav>
 
-        <div class="product">
-            <h3>Shoes</h3>
-            <p>Price: $25</p>
-            <button onclick="addToCart('Shoes', 25)">Add to Cart</button>
-        </div>
+<hr>
 
-        <div class="product">
-            <h3>Hat</h3>
-            <p>Price: $7</p>
-            <button onclick="addToCart('Hat', 7)">Add to Cart</button>
-        </div>
-    </section>
+<!-- FEATURED HOUSES -->
+<section>
+    <h2>Available Houses</h2>
 
-    <section class="cart">
+    <!-- HOUSE 1 -->
+    <article>
+        <h3>Modern Family House</h3>
+        <p><strong>Price:</strong> $120,000</p>
+        <p><strong>Location:</strong> Jakarta</p>
+        <p><strong>Details:</strong> 3 Bedrooms, 2 Bathrooms, Garage</p>
+        <button>Contact Seller</button>
+    </article>
+
+    <hr>
+
+    <!-- HOUSE 2 -->
+    <article>
+        <h3>Minimalist City House</h3>
+        <p><strong>Price:</strong> $95,000</p>
+        <p><strong>Location:</strong> Bandung</p>
+        <p><strong>Details:</strong> 2 Bedrooms, 1 Bathroom</p>
+        <button>Contact Seller</button>
+    </article>
+
+    <hr>
+
+    <!-- HOUSE 3 -->
+    <article>
+        <h3>Luxury Villa</h3>
+        <p><strong>Price:</strong> $350,000</p>
+        <p><strong>Location:</strong> Bali</p>
+        <p><strong>Details:</strong> 5 Bedrooms, Pool, Garden</p>
+        <button>Contact Seller</button>
+    </article>
+
+</section>
+
+<hr>
+
+<!-- CONTACT FORM -->
+<section>
+    <h2>Contact Us</h2>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" placeholder="Your name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Your email"><br><br>
+
+        <label>Message:</label><br>
+        <textarea placeholder="I am interested in..."></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<hr>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 DreamHouse Realty</p>
+</footer>
+
+</body>
+</html>
         <h2>Cart</h2>
         <ul id="cartItems"></ul>
         <p><strong>Total: $<span id="total">0</span></strong></p>
