@@ -1,33 +1,97 @@
-;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DreamHouse Realty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-button:hover {
-    background: #162c66;
-}
+<header>
+    <h1>DreamHouse Realty</h1>
+    <p>Your trusted property partner</p>
+</header>
 
-/* SERVICES LIST */
-ul {
-    padding-left: 20px;
-}
+<nav>
+    <a href="#home">Home</a>
+    <a href="#houses">Houses</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-/* CONTACT FORM */
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-}
+<section id="home">
+    <h2>Welcome</h2>
+    <p>
+        Find your dream home with the best price and location.
+        Trusted by thousands of homeowners.
+    </p>
+</section>
 
-form textarea {
-    height: 100px;
-}
+<section id="houses">
+    <h2>Available Houses</h2>
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #1e3a8a;
-    color: white;
-    margin-top: 20px;
-}
+    <div class="card">
+        <h3>Modern Family House</h3>
+        <p><b>Price:</b> $120,000</p>
+        <p><b>Location:</b> Jakarta</p>
+        <p>3 Bedrooms • 2 Bathrooms • Garage</p>
+        <button>Contact Seller</button>
+    </div>
 
+    <div class="card">
+        <h3>Minimalist City House</h3>
+        <p><b>Price:</b> $95,000</p>
+        <p><b>Location:</b> Bandung</p>
+        <p>2 Bedrooms • 1 Bathroom</p>
+        <button>Contact Seller</button>
+    </div>
+
+    <div class="card">
+        <h3>Luxury Villa</h3>
+        <p><b>Price:</b> $350,000</p>
+        <p><b>Location:</b> Bali</p>
+        <p>5 Bedrooms • Pool • Garden</p>
+        <button>Contact Seller</button>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Buying & Selling Houses</li>
+        <li>Property Valuation</li>
+        <li>Legal Assistance</li>
+        <li>Mortgage Consultation</li>
+    </ul>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        DreamHouse Realty is a professional real estate company
+        helping people find the right home across Indonesia.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p><b>Phone:</b> +62 812-3456-7890</p>
+    <p><b>Email:</b> info@dreamhouse.com</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="I am interested in this house..."></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 DreamHouse Realty</p>
+</footer>
+
+</body>
+</html>
